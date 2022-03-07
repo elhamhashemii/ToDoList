@@ -47,12 +47,12 @@ export default {
     padding: 0;
     box-sizing: border-box;
     width: 1100px;
-    height: 650px;
+    height: 700px;
     border-radius: 30px;
     background-color: #fff;
     .sidebar {
         background-color: #f8f8f8;
-        width: 70px;
+        width: 70px !important;
         border-radius: 30px 0px 0px 30px;
     }
 }
