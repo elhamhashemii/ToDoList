@@ -1,0 +1,35 @@
+$directions: (
+  "t": "top",
+  "b": "bottom",
+  "r": "right",
+  "l": "left",
+);
+$spacings: (
+  "p": "padding",
+  "m": "margin",
+);
+
+@each $abbr, $space in $spacings {
+  .#{$abbr} {
+    @for $step from 0 to 12 + 1 {
+      &a-#{$step} {
+        #{$space}: #{$step * 4}px !important;
+      }
+      &x-#{$step} {
+        #{$space}: 0 #{$step * 4}px !important;
+      }
+      &y-#{$step} {
+        #{$space}: #{$step * 4}px 0 !important;
+      }
+      @each $key, $value in $directions {
+        &#{$key}-#{$step} {
+          #{$space}-#{$value}: #{$step * 4}px !important;
+        }
+      }
+    }
+  }
+}
+
+.full_width {
+  width: 100% !important;
+}

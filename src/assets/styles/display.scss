@@ -1,0 +1,47 @@
+.d {
+  &-block {
+    display: flex;
+  }
+  &-none {
+    display: none;
+  }
+  &-flex {
+    display: flex;
+    &-column {
+      flex-direction: column;
+    }
+  }
+  &-inline {
+    display: inline;
+  }
+}
+
+.justify {
+  &-center {
+    justify-content: center;
+  }
+  &-start {
+    justify-content: flex-start;
+  }
+  &-end {
+    justify-content: flex-end;
+  }
+  &-between {
+    justify-content: space-between;
+  }
+  &-around {
+    justify-content: space-around;
+  }
+}
+
+.align {
+  &-center {
+    align-items: center;
+  }
+  &-end {
+    align-items: flex-end;
+  }
+  &-start {
+    align-items: flex-start;
+  }
+}
