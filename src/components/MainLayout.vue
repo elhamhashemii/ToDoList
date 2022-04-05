@@ -1,6 +1,6 @@
 <template>
     <div class="container d-flex align-center justify-center">
-        <div class="wrapperCard d-flex">
+        <div class="wrapperCard d-flex col-8">
             <div class="sidebar d-flex d-flex-column justify-between align-center">
                 <div class="mt-12">
                     <div class="mt-6 mb-12 icon-btn">
@@ -46,8 +46,7 @@ export default {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    width: 1100px;
-    height: 700px;
+    height: 75vh;
     border-radius: 30px;
     background-color: #fff;
     .sidebar {
